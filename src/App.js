@@ -4,7 +4,7 @@ import resume2 from './public/resume2-1.png'
 import linkedin from './public/linkedin.png'
 import github from './public/github.png'
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import 'bootstrap';
 
 
@@ -20,7 +20,7 @@ function App() {
   const navigationBar = () => {
     return <>
       <header className="App-header" onClick={() => { setPage(PageOptions.Resume) }} style={{cursor: "pointer"}}>
-        <img src={me} className="MePic" alt="me-profile-picture"/>        
+        <img src={me} className="MePic"/>        
       </header>
       <span style={{ background: "white", fontSize: 10, borderRadius: 8, padding: 4, marginTop: 16, maxWidth: 340 }}>
         I have been passionate about software development since I began Computer Engineering in Bogazici University. 
@@ -38,12 +38,12 @@ function App() {
       </button>*/}
       <a href='https://linkedin.com/in/bar%C4%B1n-%C3%B6zmen-2b4233135' target='_blank'>
         <button className="HomeButton">
-          Linkedin <img src={linkedin} style={{width: 24, marginTop: -5}} alt="linkedin-icon"/>
+          Linkedin <img src={linkedin} style={{width: 24, marginTop: -5}}/>
         </button>
       </a>
       <a href='https://github.com/ozmenbrn' target='_blank'>
         <button className="HomeButton">
-          Github <img src={github} style={{width: 18, marginTop: -5, marginLeft: 4}} alt="github-icon"/>
+          Github <img src={github} style={{width: 18, marginTop: -5, marginLeft: 4}}/>
         </button>
       </a>
     </>
