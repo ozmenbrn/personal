@@ -20,7 +20,7 @@ function App() {
   const navigationBar = () => {
     return <>
       <header className="App-header" onClick={() => { setPage(PageOptions.Resume) }} style={{cursor: "pointer"}}>
-        <img src={me} className="MePic"/>        
+        <img src={me} className="MePic" alt="me-pp"/>        
       </header>
       <span style={{ background: "white", fontSize: 10, borderRadius: 8, padding: 4, marginTop: 16, maxWidth: 340 }}>
         I have been passionate about software development since I began Computer Engineering in Bogazici University. 
@@ -36,14 +36,14 @@ function App() {
       {/*<button className="HomeButton" style={{opacity: page === PageOptions.Resume ? 0.4: 1}} onClick={() => {setPage(PageOptions.Resume)}}>
         Resumes
       </button>*/}
-      <a href='https://linkedin.com/in/bar%C4%B1n-%C3%B6zmen-2b4233135' target='_blank'>
+      <a href='https://linkedin.com/in/bar%C4%B1n-%C3%B6zmen-2b4233135' target='_blank' rel="noreferrer">
         <button className="HomeButton">
-          Linkedin <img src={linkedin} style={{width: 24, marginTop: -5}}/>
+          Linkedin <img src={linkedin} style={{width: 24, marginTop: -5}} alt="linkedin-icon"/>
         </button>
       </a>
-      <a href='https://github.com/ozmenbrn' target='_blank'>
+      <a href='https://github.com/ozmenbrn' target='_blank' rel="noreferrer">
         <button className="HomeButton">
-          Github <img src={github} style={{width: 18, marginTop: -5, marginLeft: 4}}/>
+          Github <img src={github} style={{width: 18, marginTop: -5, marginLeft: 4}} alt="github-icon"/>
         </button>
       </a>
     </>
