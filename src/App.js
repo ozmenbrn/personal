@@ -69,10 +69,10 @@ function App() {
                 {page === PageOptions.Resume && (
                   <div class='row'>
                     <div class='col'>
-                      <img src={resume1} className='Resume' alt="resume-1" />  
+                      <img src={resume2} className='Resume' alt="resume-2" />  
                     </div>
                     <div class='col'>
-                      <img src={resume2} className='Resume' alt="resume-2" />  
+                      <img src={resume1} className='Resume' alt="resume-1" />  
                     </div>
                   </div>
                 )}
